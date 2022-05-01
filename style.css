@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Overpass&display=swap');
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(210, 46%, 95%);
+  font-size: 13px;
+  font-family: 'Kumbh Sans', sans-serif;
+  overflow: hidden;
+}
+
+section {
+  width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 21.5rem;
+  margin-bottom: 5rem;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: #FFFBF4;
+  border-radius: 15px;
+  position: relative;
+}
+
+aside img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px 0px 0px 15px;
+}
+
+article {
+  margin-left: 4%;
+  margin-right: 5%;
+}
+
+article h1 {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 1.4rem;
+  color: hsl(217, 19%, 35%);
+}
+article p{
+  color: hsl(214, 17%, 51%);
+  margin-top: -2%;
+  margin-right: 6%;
+}
+
+#bottom {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3%;
+}
+
+#profile {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2%;
+}
+#profile h6 {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  margin-top: 10%;
+}
+#profile p {
+  margin-top: 5%;
+  color: hsl(212, 23%, 69%);
+}
+
+#avatar {
+  width: 12%;
+  height: 12%;
+  border-radius: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#share {
+  margin-top: 7%;
+  margin-left: 45%;
+}
+#share a {
+  filter: invert(0.7);
+  background-color: #070707;
+  border-radius: 50%;
+  padding: 7px;
+}
+#share a:hover {
+  filter: invert(0.7);
+  background-color: #272727;
+}
+#share a:focus {
+  filter: invert(0);
+  background-color: hsl(217, 19%, 35%);
+}
+
+#social {
+  width: 15rem;
+  height: 3rem;
+  display: none;
+  flex-direction: row;
+  background-color: hsl(217, 19%, 35%);
+  opacity: 0.93;
+  position: absolute;
+  align-items: center;
+  top: 120px;
+  right: -70px;
+  border-radius: 7px;
+  color: #FFFBF4;
+  padding: 2px;
+}
+#social h2 {
+  letter-spacing: 5px;
+  color: hsl(212, 23%, 69%);
+  font-weight: lighter;
+  font-size: 0.8rem;
+  margin-left: 17%;
+  margin-right: 4%;
+}
+.media {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+#social a {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+#triangle {
+  display: none;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 15px 0 15px;
+  border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+  opacity: 0.93;
+  position: absolute;
+  top: 172px;
+  right: 33px;
+}
+
+footer {
+  align-items: flex-end;
+  font-size: 11px;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: hsl(212, 23%, 69%);
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+@media all and (max-width: 1024px) {
+  body {
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section {
+    flex-direction: column;
+    margin-top: 30%;
+    width: 90%;
+    height: 62%;
+  }
+
+  aside img {
+    border-radius: 15px 15px 0px 0px;
+  }
+
+  article h1 {
+    margin-top: 10%;
+  }
+
+  #bottom {
+    margin-bottom: 0;
+  }
+
+  #avatar {
+    width: 17%;
+    height: 17%;
+    margin-bottom: 0;
+  }
+
+  #profile {
+    margin-left: 5%;
+    margin-bottom: -2%;
+  }
+
+  #profile h6 {
+    margin-top: 12%;
+    width: 10rem;
+  }
+
+  #share {
+    margin-top: 12%;
+    margin-left: 10%;
+    z-index: 2;
+  }
+  #share a {
+    padding: 12px;
+  }
+
+  #social {
+    display: none;
+    border-radius: 0px 0px 15px 15px;
+    right: 0;
+    bottom: 0;
+    top: auto;
+    width: 100%;
+    height: 4rem;
+    opacity: 1;
+    z-index: 1;
+  }
+
+  #social h2 {
+    margin-left: 10%;
+  }
+
+  #triangle {
+    opacity: 0;
+  }
+
+}
